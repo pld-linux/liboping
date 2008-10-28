@@ -1,7 +1,7 @@
 Summary:	Liboping library
 Name:		liboping
 Version:	0.3.5
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Libraries
 Source0:	http://verplant.org/liboping/files/%{name}-%{version}.tar.bz2
