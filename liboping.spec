@@ -1,11 +1,13 @@
+# TODO:
+# - package perl modules
 Summary:	Liboping library
 Name:		liboping
-Version:	0.3.5
-Release:	3
+Version:	1.1.0
+Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://verplant.org/liboping/files/%{name}-%{version}.tar.bz2
-# Source0-md5:	0150a1c1ae6ce847b11543df31d4f952
+# Source0-md5:	9763652951c3266909a98022db935333
 URL:		http://verplant.org/liboping/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
