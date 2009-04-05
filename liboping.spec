@@ -2,12 +2,12 @@
 # - package perl modules
 Summary:	Liboping library
 Name:		liboping
-Version:	1.1.1
+Version:	1.1.2
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://verplant.org/liboping/files/%{name}-%{version}.tar.bz2
-# Source0-md5:	51fab33507202f0a7e127be21852e14e
+# Source0-md5:	a120dcd0d808e9a59e2729e7cffcb067
 URL:		http://verplant.org/liboping/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,7 +28,6 @@ noticing it.
 %package -n oping
 Summary:	oping ICMP query tool
 Group:		Applications/Networking
-Requires:	%{name} = %{version}-%{release}
 
 %description -n oping
 Sample application, which demonstrates the liboping's abilities. It is like
