@@ -2,12 +2,12 @@
 # - package perl modules
 Summary:	Liboping library
 Name:		liboping
-Version:	1.1.2
+Version:	1.3.2
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://verplant.org/liboping/files/%{name}-%{version}.tar.bz2
-# Source0-md5:	a120dcd0d808e9a59e2729e7cffcb067
+# Source0-md5:	f549c6f1f4d1dbef4dc7cc823badc20b
 URL:		http://verplant.org/liboping/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -61,6 +61,11 @@ Statyczna biblioteka liboping.
 %setup -q
 
 %build
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 
