@@ -1,37 +1,39 @@
 # TODO:
 # - package perl modules
+#
 Summary:	Liboping library
 Name:		liboping
-Version:	1.3.2
+Version:	1.4.0
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://verplant.org/liboping/files/%{name}-%{version}.tar.bz2
-# Source0-md5:	f549c6f1f4d1dbef4dc7cc823badc20b
+# Source0-md5:	b3d3ef82c8b963266e0ce8db1509cac4
 URL:		http://verplant.org/liboping/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-liboping is a C library to generate ICMP echo requests, better known as
-"ping packets". It is intended for use in network monitoring applications
-or applications that would otherwise need to fork ping(1) frequently.
+liboping is a C library to generate ICMP echo requests, better known
+as "ping packets". It is intended for use in network monitoring
+applications or applications that would otherwise need to fork ping(1)
+frequently.
 
 liboping was inspired by ping, libping (homepage vanished) and fping:
-It differs from these existing solutions in that it can `ping' multiple
-hosts in parallel using IPv4 or IPv6 transparently. Other design principles
-were an object oriented interface, simplicity and extensibility: Is simple
-because there are only a few interface functions and no external
-dependencies. It's extensible since all (internal) data is kept in "opaque
-data types", so the storage may change or be extended without applications
-noticing it.
+It differs from these existing solutions in that it can `ping'
+multiple hosts in parallel using IPv4 or IPv6 transparently. Other
+design principles were an object oriented interface, simplicity and
+extensibility: Is simple because there are only a few interface
+functions and no external dependencies. It's extensible since all
+(internal) data is kept in "opaque data types", so the storage may
+change or be extended without applications noticing it.
 
 %package -n oping
 Summary:	oping ICMP query tool
 Group:		Applications/Networking
 
 %description -n oping
-Sample application, which demonstrates the liboping's abilities. It is like
-ping, ping6, and fping rolled into one.
+Sample application, which demonstrates the liboping's abilities. It is
+like ping, ping6, and fping rolled into one.
 
 %package devel
 Summary:	Header files for liboping library
@@ -88,7 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n oping
 %defattr(644,root,root,755)
-%attr(4754,root,adm) %{_bindir}/*
+%attr(4754,root,adm) %{_bindir}/oping
 %{_mandir}/man8/*.8*
 
 %files devel
