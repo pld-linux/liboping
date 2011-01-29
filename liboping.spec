@@ -10,6 +10,10 @@ Group:		Libraries
 Source0:	http://verplant.org/liboping/files/%{name}-%{version}.tar.bz2
 # Source0-md5:	61d17df8ef0a60ccafc8715de310b3f0
 URL:		http://verplant.org/liboping/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool
+BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
