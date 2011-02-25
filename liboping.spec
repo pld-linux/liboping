@@ -3,12 +3,12 @@
 #
 Summary:	Liboping library
 Name:		liboping
-Version:	1.5.1
+Version:	1.6.0
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://verplant.org/liboping/files/%{name}-%{version}.tar.bz2
-# Source0-md5:	61d17df8ef0a60ccafc8715de310b3f0
+# Source0-md5:	1f5cfb17feb38b5aec94fbd36607cbed
 URL:		http://verplant.org/liboping/
 BuildRequires:	autoconf
 BuildRequires:	automake
