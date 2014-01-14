@@ -4,7 +4,7 @@
 Summary:	Liboping library
 Name:		liboping
 Version:	1.6.2
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries
 Source0:	http://verplant.org/liboping/files/%{name}-%{version}.tar.bz2
@@ -91,6 +91,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/lib*.so.0
 
 %files -n oping
 %defattr(644,root,root,755)
