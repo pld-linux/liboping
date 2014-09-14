@@ -162,7 +162,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc bindings/perl/Changes
 %{perl_vendorarch}/Net/Oping.pm
 %dir %{perl_vendorarch}/auto/Net/Oping
-%{perl_vendorarch}/auto/Net/Oping/Oping.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Net/Oping/Oping.so
 %{_mandir}/man3/Net::Oping.3pm*
 
