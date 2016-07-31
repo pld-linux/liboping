@@ -2,16 +2,17 @@
 Summary:	Liboping library to generate ICMP echo requests
 Summary(pl.UTF-8):	Biblioteka liboping do generowania żądań ICMP echo
 Name:		liboping
-Version:	1.6.2
-Release:	5
+Version:	1.9.0
+Release:	1
 License:	LGPL v2.1+ (library), GPL v2+ (tool, perl binding)
 Group:		Libraries
-Source0:	http://verplant.org/liboping/files/%{name}-%{version}.tar.bz2
-# Source0-md5:	64a6f31310093d2517cfe7f05aa011e0
-URL:		http://verplant.org/liboping/
+Source0:	http://noping.cc/files/%{name}-%{version}.tar.bz2
+# Source0-md5:	9c9f65bfd297d7e7092c7f219c31f66a
+URL:		http://noping.cc/
 BuildRequires:	autoconf >= 2.65
 BuildRequires:	automake
 BuildRequires:	libtool >= 2:2
+BuildRequires:	ncurses-devel
 BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	perl-devel >= 1:5.6
 BuildRequires:	rpm-perlprov
@@ -142,6 +143,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
+%attr(755,root,root) %{_bindir}/noping
 %attr(755,root,root) %{_libdir}/liboping.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/liboping.so.0
 
@@ -150,6 +152,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/liboping.so
 %{_libdir}/liboping.la
 %{_includedir}/oping.h
+%{_pkgconfigdir}/liboping.pc
 %{_mandir}/man3/liboping.3*
 %{_mandir}/man3/ping_*.3*
 
