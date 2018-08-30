@@ -3,7 +3,7 @@ Summary:	Liboping library to generate ICMP echo requests
 Summary(pl.UTF-8):	Biblioteka liboping do generowania żądań ICMP echo
 Name:		liboping
 Version:	1.10.0
-Release:	1
+Release:	2
 License:	LGPL v2.1+ (library), GPL v2+ (tool, perl binding)
 Group:		Libraries
 Source0:	http://noping.cc/files/%{name}-%{version}.tar.bz2
