@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Liboping library to generate ICMP echo requests
 Summary(pl.UTF-8):	Biblioteka liboping do generowania żądań ICMP echo
 Name:		liboping
